@@ -1,0 +1,11 @@
+@@ConnectionString: ''
+@@Type: 'Local'
+@@DesktopType: 'local'
+@@DisplayName: 'ローカル コンピューター'
+IMPORT 'controlRepo.appmask' AS appmask
+IMPORT 'imageRepo.imgrepo' AS imgrepo
+@SENSITIVE: []
+System.RunApplication.RunApplication ApplicationPath: $'''microsoft.windows.camera:''' WindowStyle: System.ProcessWindowStyle.Normal ProcessId=> AppProcessId
+System.RunApplication.RunApplication ApplicationPath: $'''ms-settings:sound''' WindowStyle: System.ProcessWindowStyle.Normal ProcessId=> AppProcessId2
+UIAutomation.Click.Click Element: appmask['Window \'設定\'']['Button \'マイク\''] ClickType: UIAutomation.ClickType.LeftClick MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter OffsetX: 0 OffsetY: 0
+UIAutomation.Click.Click Element: appmask['Window \'設定\'']['Button \'テストの開始\''] ClickType: UIAutomation.ClickType.LeftClick MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter OffsetX: 0 OffsetY: 0
