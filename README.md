@@ -12,4 +12,4 @@ git clone https://github.com/Junk-Programing/web-test.git
 
 (例) C:\Users\ユーザー名\AppData\Local\Microsoft\Power Automate Desktop\Console\Workspace
 
-Power Automate Desktopを起動し、フローを実行します。フローはショートカットによる起動も可能です。
+このファイルを元に、ChatGPT等に解析させて、自分のPower Automateのフロー作成に使用してください。
